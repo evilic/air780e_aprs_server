@@ -23,9 +23,8 @@ class Server:
         current_client = self.__client
         try:
             while True:
-                # msg = input('Enter message: ')
-                time.sleep(5)
-                msg = 'Hello from server'
+                msg = input('Enter message: ')
+                msg += '\r\n'
                 if self.__client != current_client:
                     print('Client changed')
                     break
